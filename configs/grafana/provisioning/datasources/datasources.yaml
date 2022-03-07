@@ -1,0 +1,14 @@
+apiVersion: 1
+
+datasources:
+  - name: device-status
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    secureJsonData:
+      token: lime-token
+    jsonData:
+      version: Flux
+      organization: lj
+      defaultBucket: device-status
+      tlsSkipVerify: true
