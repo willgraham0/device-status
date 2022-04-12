@@ -6,9 +6,9 @@ datasources:
     access: proxy
     url: http://influxdb:8086
     secureJsonData:
-      token: lime-token
+      token: token
     jsonData:
       version: Flux
-      organization: lj
+      organization: organisation
       defaultBucket: device-status
       tlsSkipVerify: true
